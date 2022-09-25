@@ -1,6 +1,23 @@
 # debugger-alpha-bindings README
+Enable a mode during debugging to step through the debugger
+with alpha keys, inspired by gdb commands (`c`,`s`,`n`,`f`, ...).
+These keys are more accessible than Fn keys from normal finger positions.
 
-This is the README for your extension "debugger-alpha-bindings". After writing up a brief description, we recommend including the following sections.
+NOTE:
+This mode fundamentally breaks the ability to edit the code,
+but it builds upon the expectation that you'll be debugging through code rather than editing it.
+For switching to edition, you can always quickly toggle the mode on/off.
+
+## TLDR
+Bindings:
+- `C-d`,`C-d` (while no debugger): start debugger (more accessible than F5)
+- `C-d`,`C-d` (while debugging): toggle GDB-like bindings
+- `c`=`F5`: Continue debugging
+- `n`=`F10`: Next line (step over)
+- `s`=`F11`: Step into
+- `f`=`S-F11`: Finish (step out)
+
+# TODO: Document
 
 ## Features
 
